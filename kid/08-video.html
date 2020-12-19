@@ -23,19 +23,18 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body id="p02">
-  <audio autoplay id="audio">
-    <source src="audio/02-get-started.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+<body id="p08">
   <div class="wrapper">
-    <h1 class="sr-only">Let’s get started!</h1>
-    <form autocomplete="off">
-      <input type="hidden" autocomplete="false">
-      <input type="text" name="kidname" placeholder="Name" id="kidname"><br>
-      <!--<input type="text" name="username" placeholder="Username"><br>-->
-      <a href="02.1-video.html" class="button">Go!</a>
-    </form>
+    <div class="controls">
+      <a href="08.1-library.html">
+        <img src="img/PlayButton.svg" class="grow" width="100" height="100"></a>
+      <a href="08.1-library.html"><img src="img/PauseButton.svg" class="grow" width="100" height="100"></a>
+    </div>
+    <div class="video-frame outer shadow">
+      <div class="video-frame inner shadow">
+        <iframe width="700" height="394" src="https://www.youtube.com/embed/gNwOmJPq9X4?autoplay=1&color=white&controls=0&modestbranding=1&playsinline=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>

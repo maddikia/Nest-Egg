@@ -18,24 +18,32 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,800;1,400;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body id="p02">
-  <audio autoplay id="audio">
-    <source src="audio/02-get-started.mp3" type="audio/mpeg">
+<body id="p09">
+  <img class="audio-toggle grow" src="img/audio.png" width="50" height="50" style="position: absolute; top: 10px; right:10px">
+  <audio id="audio">
+    <source src="audio/09-stock-market-2.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
+  <div class="user">
+    <div class="profile grow"><img src="img/girl.png" alt="girl profile picture" width="70" height="70"></div>
+    <div class="bank shadow grow"><img src="img/coin.svg" alt="coin" width="50" height="50">45.00</div>
+  </div>
   <div class="wrapper">
-    <h1 class="sr-only">Let’s get started!</h1>
-    <form autocomplete="off">
-      <input type="hidden" autocomplete="false">
-      <input type="text" name="kidname" placeholder="Name" id="kidname"><br>
-      <!--<input type="text" name="username" placeholder="Username"><br>-->
-      <a href="02.1-video.html" class="button">Go!</a>
-    </form>
+    <div class="content">
+      <a href="10-stocks.html"><img src="img/store.svg" alt="Store" class="animate__animated animate__bounceIn" style="padding-top: 100px; z-index: -2" width="630" height="442"></a>
+    </div>
+    <nav>
+      <div class="nav-item home"><a href="#" class="grow"><img src="img/home.svg" width="85" height="85" alt="home"></a></div>
+      <div class="nav-item learn selected"><a href="#" class="grow"><img src="img/learn.svg" width="85" height="85" alt="learn"></a></div>
+      <!--<div class="nav-item shop"><a href="#" class="grow"><img src="img/shop.svg" width="85" height="85" alt="shop"></a></div>-->
+    </nav>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>

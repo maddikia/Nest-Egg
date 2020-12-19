@@ -18,47 +18,51 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,800;1,400;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body id="p03">
-  <img class="audio-toggle grow" src="img/audio.png" width="50" height="50" style="position: absolute; top: 10px; right:10px">
-  <audio autoplay id="audio">
-    <source src="audio/03-learn-learn.mp3" type="audio/mpeg">
+<body id="p08-2">
+ <img class="audio-toggle grow" src="img/audio.png" width="50" height="50" style="position: absolute; top: 10px; right:10px">
+  <audio id="audio">
+    <source src="audio/08.1-deposit-choice.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
   <div class="user">
-    <div class="profile grow"><img src="img/girl.png" alt="girl profile picture" width="70" height="70"></div>
+    
     <div class="bank shadow grow"><img src="img/coin.svg" alt="coin" width="50" height="50">45.00</div>
   </div>
   <div class="wrapper">
-    <img src="img/egg-shell-top.svg" alt="egg shell top" class="egg-shell-top">
-    <div class="content">
-      <div class="cta selected">
+    
+    <div class="animated-coins-decision" style="margin-bottom: 100px;">
+      <img src="img/coin.svg" width="75" height="75" class="animate__animated animate__bounceInDown">
+      <img src="img/coin.svg" width="75" height="75" class="animate__animated animate__delay-1s animate__bounceInDown">
+      <img src="img/coin.svg" width="75" height="75" class="animate__animated animate__delay-2s animate__bounceInDown">
+      <img src="img/coin.svg" width="75" height="75" class="animate__animated animate__delay-3s animate__bounceInDown">
+    </div>
+
+    <div class="eggs">
+      <div class="egg-item egg-01">
+        <div class="egg-container">
+          <div class="text-overlay">3%</div>
+          <a href="#" class="numbers-transition"><img src="img/egg.svg" width="200" style="width: 200px; height: auto; margin-top: 50px;" class="egg grow egg-shake" alt="egg"></a>
+        </div>
         <h3>save</h3>
-        <a href="04-video.html" class="grow">
-          <img src="img/Intro.svg" alt="intro" width="150" height="150">
-        </a>
       </div>
-      <div class="cta">
-        <h3>money</h3>
-        <a href="#" class="grow">
-          <img src="img/MyMoney.svg" alt="my money" width="150" height="150">
-        </a>
-      </div>
-      <div class="cta">
-        <h3>interest rate</h3>
-        <a href="#" class="grow">
-          <img src="img/InterestRate.svg" alt="interest rate" width="150" height="150">
-        </a>
+       <div class="egg-item egg-02">
+        <div class="egg-container">
+          <div class="text-overlay">?%</div>
+          <a href="09-store.html" class="numbers-transition"><img src="img/egg.svg" width="200" style="width: 200px; height: auto; margin-top: 50px;" class="egg grow egg-shake" alt="egg"></a>
+        </div>
+        <h3>invest</h3>
       </div>
     </div>
-    <img src="img/egg-shell-bottom.svg" alt="egg shell bottom" class="egg-shell-bottom">
     <nav>
-      <div class="nav-item home"><a href="#" class="grow"><img src="img/home.svg" width="85" height="85" alt="home"></a></div>
-      <div class="nav-item learn selected"><a href="#" class="grow"><img src="img/learn.svg" width="85" height="85" alt="learn"></a></div>
+      <div class="nav-item home selected"><a href="#" class="grow"><img src="img/home.svg" width="85" height="85" alt="home"></a></div>
+      <div class="nav-item learn"><a href="#" class="grow"><img src="img/learn.svg" width="85" height="85" alt="learn"></a></div>
       <!--<div class="nav-item shop"><a href="#" class="grow"><img src="img/shop.svg" width="85" height="85" alt="shop"></a></div>-->
     </nav>
   </div>

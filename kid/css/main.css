@@ -66,6 +66,9 @@ input[type=text], .button{
   box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
   outline: none;
 }
+
+
+/* BUTTONS AND ROLLOVERS. */
 .button {
   display: block;
   border-radius: 20px;
@@ -86,6 +89,24 @@ input[type=text], .button{
   top: 2px;
   background-color: #E09905;
 }
+.grow {
+  transition: all .2s ease-in-out;
+  display: block;
+}
+.grow:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.shadow {
+  -webkit-box-shadow: 0 0 10px 1px rgba(0,0,0,.1);
+  box-shadow: 0 0 10px 1px rgba(0,0,0,.1);
+}
+
+/* //END */
 
 nav {
   background-color: #5B9600;
@@ -125,17 +146,6 @@ nav {
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }*/
-.nav-item a {
-  transition: all .2s ease-in-out;
-  display: block;
-}
-.nav-item a:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
 
 .egg-shell-top {
   position: relative;
@@ -166,17 +176,7 @@ nav {
 .cta h3 {
   margin: 0;
 }
-.cta a {
-  display: block;
-  transition: all .2s ease-in-out;
-}
-.cta a:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
+
 .cta.selected {
   opacity: 1;
 }
@@ -195,6 +195,120 @@ nav {
 .piggy-button {
   background-color: #56C2F6
 }*/
+
+
+.user {
+  position: absolute;
+  display: flex;
+  top: 20px;
+  left: 20px;
+}
+.profile {
+  height: 50px;
+  margin-right: 20px;
+}
+.bank {
+  background-color: white;
+  border-radius: 100px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: black;
+  font-weight: 800;
+  height: 50px;
+}
+.bank img {
+  margin-right: 20px;
+}
+
+
+/* VIDEO PAGE */
+.controls {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.video-frame {
+  border-radius: 40px;
+}
+.video-frame.outer {
+  background-color: #EE796F;
+  padding: 30px;
+}
+.video-frame.inner {
+  background-color: white;
+  padding: 30px;
+}
+.video-frame iframe {
+  border-radius: 20px;
+}
+/* //END */
+
+.egg-container {
+  position: relative;
+}
+.text-overlay {
+  color: black;
+  font-size: 2.65rem;
+  font-weight: 800;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.animated-coins, .animated-coins-decision {
+  position: relative;
+  top: 100px;
+  left: -35px;
+
+}
+.animated-coins-decision {
+  left: 0;
+}
+.animated-coins img {
+  position: absolute;
+}
+.egg-overlay {
+  position: relative;
+  z-index: 100;
+}
+
+
+.eggs {
+  display: flex;
+  text-align: center;
+}
+.egg-item {
+  margin: 0 20px;
+}
+
+
+/* parent frame */
+.frame {
+  margin: 20px auto;
+  width: 420px;
+  height: 855px;
+  background-image: url('../img/phone.png');
+  position: relative;
+  z-index: 100;
+}
+.app-screen {
+  margin: 0 auto;
+  width: 386px;
+  height: 835px;
+  background-image: url('../img/parent-screen.png');
+  background-size: cover;
+  position: absolute;
+  top: 30px;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  border-radius: 30px
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301

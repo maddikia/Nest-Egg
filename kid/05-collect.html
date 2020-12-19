@@ -18,24 +18,27 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,800;1,400;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body id="p02">
-  <audio autoplay id="audio">
-    <source src="audio/02-get-started.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-  <div class="wrapper">
-    <h1 class="sr-only">Let’s get started!</h1>
-    <form autocomplete="off">
-      <input type="hidden" autocomplete="false">
-      <input type="text" name="kidname" placeholder="Name" id="kidname"><br>
-      <!--<input type="text" name="username" placeholder="Username"><br>-->
-      <a href="02.1-video.html" class="button">Go!</a>
-    </form>
+<body id="p05">
+  <img class="audio-toggle grow" src="img/audio.png" width="50" height="50" style="position: absolute; top: 10px; right:10px">
+  <audio id="audio">
+      <source src="audio/05-06-coin-deposit.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+   <div class="wrapper">
+    <div class="animated-coins">
+      <img src="img/coin.svg" width="75" height="75" class="animate__animated animate__bounceInDown animate__slower">
+      <img src="img/coin.svg" width="75" height="75" class="animate__animated animate__delay-1s animate__bounceInDown animate__slower">
+      <img src="img/coin.svg" width="75" height="75" class="animate__animated animate__delay-2s animate__bounceInDown animate__slower">
+      <img src="img/coin.svg" width="75" height="75" class="animate__animated animate__delay-3s animate__bounceInDown animate__slower">
+    </div>
+    <a href="07-third-egg.html"><img src="img/egg.svg" width="200" style="width: 200px; height: auto;" class="egg grow egg-overlay" alt="egg"></a>
+    
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>

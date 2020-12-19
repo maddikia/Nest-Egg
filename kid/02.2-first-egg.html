@@ -23,19 +23,28 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body id="p02">
+<body id="p02-2">
   <audio autoplay id="audio">
-    <source src="audio/02-get-started.mp3" type="audio/mpeg">
+    <source src="audio/02.2-save-egg.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
+  <div class="user">
+    
+    <div class="bank shadow grow"><img src="img/coin.svg" alt="coin" width="50" height="50">45.00</div>
+  </div>
   <div class="wrapper">
-    <h1 class="sr-only">Let’s get started!</h1>
-    <form autocomplete="off">
-      <input type="hidden" autocomplete="false">
-      <input type="text" name="kidname" placeholder="Name" id="kidname"><br>
-      <!--<input type="text" name="username" placeholder="Username"><br>-->
-      <a href="02.1-video.html" class="button">Go!</a>
-    </form>
+    <div class="grow">
+      <a href="03-library.html">
+        <img src="img/girl.png" alt="girl profile picture" width="150" height="150" style="margin-top: 20px">
+      </a>
+    </div>
+    <img src="img/egg.svg" width="200" style="width: 200px; height: auto; margin-top: 50px;" class="egg grow egg-shake" alt="egg">
+   <h3>save</h3>
+    <nav>
+      <div class="nav-item home selected"><a href="#" class="grow"><img src="img/home.svg" width="85" height="85" alt="home"></a></div>
+      <div class="nav-item learn"><a href="#" class="grow"><img src="img/learn.svg" width="85" height="85" alt="learn"></a></div>
+      <!--<div class="nav-item shop"><a href="#" class="grow"><img src="img/shop.svg" width="85" height="85" alt="shop"></a></div>-->
+    </nav>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
