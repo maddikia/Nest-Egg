@@ -2,13 +2,13 @@
 jQuery( document ).ready(function() {
 
 	//cache pages references
-	var $p01 = jQuery('#p01'); 
-	var $p02 = jQuery('#p02'); 
-	var $p02_1 = jQuery('#p02-1'); 
+	var $p01 = jQuery('#p01');
+	var $p02 = jQuery('#p02');
+	var $p02_1 = jQuery('#p02-1');
 	var $p02_2 = jQuery('#p02-2');
-	var $p03 = jQuery('#p03'); 
+	var $p03 = jQuery('#p03');
 	var $p04 = jQuery('#p04');
-	var $p04_1 = jQuery('#p04-1'); 
+	var $p04_1 = jQuery('#p04-1');
 	var $p05 = jQuery('#p05');
 
 	//if audio toggle present, assign action
@@ -29,7 +29,7 @@ jQuery( document ).ready(function() {
 			splash_screen_audio.play();
 
 			//set timeout to go to next page
-			setTimeout(function(){ 
+			setTimeout(function(){
 				window.location = "02-start.html";
 			}, 7000);
 
@@ -53,12 +53,12 @@ jQuery( document ).ready(function() {
 			play_audio.play();
 
 			//set timeout to go to next page
-			/*setTimeout(function(){ 
+			/*setTimeout(function(){
 				window.location = "03-library.html";
 			}, 3000);*/
 		});
 	}
-	
+
 
 
 
@@ -69,10 +69,11 @@ jQuery( document ).ready(function() {
 		});
 		var numbers = function() {
 			var $text_container = jQuery('.text-overlay');
-			$text_container.html('$9,800');
+      $text_container.html('$9,800<br>at 18');
+      $text_container.css("font-size", "30px");
 
 			//set timeout to go to next page
-			setTimeout(function(){ 
+			setTimeout(function(){
 				window.location = "08.1-library.html";
 			}, 3000);
 
