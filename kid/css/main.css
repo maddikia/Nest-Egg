@@ -281,11 +281,11 @@ nav {
 
 /* EGG ANIMATION */
 .egg-wrapper.bounce{
-  animation: x 4s linear infinite alternate;
+  animation: x 8s linear infinite alternate;
 }
 
 .egg-wrapper.bounce .egg {
-  animation: y 1s linear infinite alternate;
+  animation: y 2s linear infinite alternate;
 }
 
 @keyframes x {
