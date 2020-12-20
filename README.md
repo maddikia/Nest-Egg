@@ -5,6 +5,6 @@ Created for Finastra's **Hack to the Future 2020** Hackathon. Check out our [Dev
 
 ## Usage & Testing
 Download the entirety of the `kid` directory and run `index.html` to start. 
-For the most accurate experience, open the page in Chrome and use DevTool's Mobile Device Viewport Mode, selecting iPad and rotating the viewport to landscape orientation. If you're not sure how to do this, check out [Chrome's DevTools Documentation](https://developers.google.com/web/tools/chrome-devtools/device-mode).
+For the most accurate experience, open the page in Chrome and use DevTools Mobile Device Viewport Mode, selecting iPad and rotating the viewport to landscape orientation. If you're not sure how to do this, check out [Chrome's DevTools Documentation](https://developers.google.com/web/tools/chrome-devtools/device-mode).
 
 Finastra FusionFabric.cloud **API Integration:** This is a preliminary integration which can create an external transfer and retrieve said transfer's details upon completion. For testing purposes, generate an authorization token through Postman and replace `token` in `external-transfer.py` before running.
