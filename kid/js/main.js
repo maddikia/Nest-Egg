@@ -22,6 +22,9 @@ jQuery( document ).ready(function() {
 		//shake egg on rollover, play audio, then go to the next screen
 		jQuery( ".egg" ).on( "click", function() {
 			jQuery(this).addClass('egg-shake');
+			jQuery(this).parent().removeClass('bounce');
+			//wrap woth flexbox so we center the egg
+			jQuery(this).parent().wrap( "<div class='wrapper'></div>" );
 			//play audio
 			splash_screen_audio.play();
 
@@ -70,7 +73,7 @@ jQuery( document ).ready(function() {
 
 			//set timeout to go to next page
 			setTimeout(function(){ 
-				window.location = "05-collect.html";
+				window.location = "08.1-library.html";
 			}, 3000);
 
 			/*var countUp = new CountUp(target_ID, target_num);
